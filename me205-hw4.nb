@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     12998,        336]
-NotebookOptionsPosition[     12309,        311]
-NotebookOutlinePosition[     12832,        329]
-CellTagsIndexPosition[     12789,        326]
+NotebookDataLength[     19034,        445]
+NotebookOptionsPosition[     18206,        416]
+NotebookOutlinePosition[     18783,        436]
+CellTagsIndexPosition[     18740,        433]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -91,11 +91,11 @@ Cell[BoxData[
      RowBox[{"V", " ", "=", " ", 
       RowBox[{"b", " ", "L", " ", "t"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"Mindex", " ", "=", " ", 
-      RowBox[{
-       RowBox[{"1", " ", "/", " ", 
-        RowBox[{"(", 
-         RowBox[{"Hp", " ", "\[Rho]", " ", "V"}], ")"}]}], 
-       "\[IndentingNewLine]", "Solve", " ", "for", " ", "Mindex"}]}]}], 
+      RowBox[{"1", " ", "/", " ", 
+       RowBox[{"(", 
+        RowBox[{"Hp", " ", "\[Rho]", " ", "V"}], ")"}]}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"Solve", " ", "for", " ", "Mindex"}]}], " ", 
     "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
    "\[IndentingNewLine]", 
    RowBox[{
@@ -113,6 +113,9 @@ Cell[BoxData[
           ")"}], "^", 
          RowBox[{"(", 
           RowBox[{"1", "/", "3"}], ")"}]}]}], ")"}]}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<Formula for Mindex: ``\>\"", ",", "Mindex"}], "]"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
@@ -133,14 +136,18 @@ Cell[BoxData[
      "material", " ", "index", " ", "is", " ", "higher", " ", "for", " ", 
      "these", " ", 
      RowBox[{"parameters", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"Mindex", " ", "/.", " ", "polystyrene"}], ")"}], " ", "/.", " ",
-     "parameters"}], " ", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"Mindex", " ", "/.", " ", "aluminum"}], ")"}], " ", "/.", " ", 
-    "parameters"}], "\[IndentingNewLine]"}]}]], "Input",
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<Mindex for polystyrene: ``\>\"", ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Mindex", " ", "/.", " ", "polystyrene"}], ")"}], " ", "/.", 
+      " ", "parameters"}]}], " ", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<Mindex for aluminum: ``\>\"", ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Mindex", " ", "/.", " ", "aluminum"}], ")"}], " ", "/.", " ", 
+      "parameters"}]}], "]"}], "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.6060512572077436`*^9, 3.606051257309923*^9}, {
    3.606053773993381*^9, 3.606053928566268*^9}, {3.606054024016053*^9, 
    3.606054037324232*^9}, 3.606054312384801*^9, {3.606054344726475*^9, 
@@ -152,25 +159,60 @@ Cell[BoxData[
    3.606764040881402*^9, 3.6067641151876287`*^9}, {3.606764492402564*^9, 
    3.606764494498774*^9}, {3.606764532517878*^9, 3.60676460861412*^9}, {
    3.606764656890346*^9, 3.606764831168035*^9}, {3.6067657765740013`*^9, 
-   3.606765777866274*^9}, {3.606766241322736*^9, 3.6067662494088078`*^9}}],
+   3.606765777866274*^9}, {3.606766241322736*^9, 3.6067662494088078`*^9}, {
+   3.6069337095890493`*^9, 3.606933733809901*^9}, {3.606933814134925*^9, 
+   3.606933849409453*^9}, {3.6069339446227016`*^9, 3.606933991727618*^9}}],
 
 Cell[BoxData[
- FormBox["7.841207297566666`*^-7", TraditionalForm]], "Output",
+ FormBox[
+  InterpretationBox["\<\"Formula for Mindex: \\!\\(TraditionalForm\\`\\(2\\\\ \
+\\@2\\%3\\)\\/\\(b\\\\ Hp\\\\ L\\\\ \\@\\(\\(F\\\\ L\\^3\\)\\/\\(b\\\\ Eval\\\
+\\ ymax\\)\\)\\%3\\\\ \[Rho]\\)\\)\"\>",
+   StringForm[
+   "Formula for Mindex: ``", 2 
+    2^Rational[
+      1, 3] $CellContext`b^(-1) $CellContext`Hp^(-1) $CellContext`L^(-1) \
+($CellContext`b^(-1) $CellContext`Eval^(-1) $CellContext`F \
+$CellContext`L^3/$CellContext`ymax)^Rational[-1, 3]/$CellContext`\[Rho]],
+   Editable->False], TraditionalForm]], "Output",
  CellChangeTimes->{{3.6067629593256693`*^9, 3.6067629797608624`*^9}, 
    3.6067630164822617`*^9, {3.606763346673558*^9, 3.606763390505559*^9}, {
    3.606763924726963*^9, 3.606763932479095*^9}, {3.606764111551454*^9, 
    3.606764116100642*^9}, 3.606764495160275*^9, 3.606764613916809*^9, {
    3.606764795130661*^9, 3.606764801682582*^9}, 3.60676502004356*^9, 
-   3.606765778805748*^9, {3.6067662427810783`*^9, 3.606766271600819*^9}}],
+   3.606765778805748*^9, {3.6067662427810783`*^9, 3.606766271600819*^9}, {
+   3.606933837420658*^9, 3.606933851762952*^9}, {3.6069339713313713`*^9, 
+   3.606933992142707*^9}}],
 
 Cell[BoxData[
- FormBox["5.30918124307193`*^-7", TraditionalForm]], "Output",
+ FormBox[
+  InterpretationBox["\<\"Mindex for polystyrene: \
+\\!\\(TraditionalForm\\`7.841207297566666`*^-7\\)\"\>",
+   StringForm["Mindex for polystyrene: ``", 7.841207297566666*^-7],
+   Editable->False], TraditionalForm]], "Output",
  CellChangeTimes->{{3.6067629593256693`*^9, 3.6067629797608624`*^9}, 
    3.6067630164822617`*^9, {3.606763346673558*^9, 3.606763390505559*^9}, {
    3.606763924726963*^9, 3.606763932479095*^9}, {3.606764111551454*^9, 
    3.606764116100642*^9}, 3.606764495160275*^9, 3.606764613916809*^9, {
    3.606764795130661*^9, 3.606764801682582*^9}, 3.60676502004356*^9, 
-   3.606765778805748*^9, {3.6067662427810783`*^9, 3.606766271603704*^9}}]
+   3.606765778805748*^9, {3.6067662427810783`*^9, 3.606766271600819*^9}, {
+   3.606933837420658*^9, 3.606933851762952*^9}, {3.6069339713313713`*^9, 
+   3.606933992146394*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox["\<\"Mindex for aluminum: \
+\\!\\(TraditionalForm\\`5.30918124307193`*^-7\\)\"\>",
+   StringForm["Mindex for aluminum: ``", 5.30918124307193*^-7],
+   Editable->False], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.6067629593256693`*^9, 3.6067629797608624`*^9}, 
+   3.6067630164822617`*^9, {3.606763346673558*^9, 3.606763390505559*^9}, {
+   3.606763924726963*^9, 3.606763932479095*^9}, {3.606764111551454*^9, 
+   3.606764116100642*^9}, 3.606764495160275*^9, 3.606764613916809*^9, {
+   3.606764795130661*^9, 3.606764801682582*^9}, 3.60676502004356*^9, 
+   3.606765778805748*^9, {3.6067662427810783`*^9, 3.606766271600819*^9}, {
+   3.606933837420658*^9, 3.606933851762952*^9}, {3.6069339713313713`*^9, 
+   3.606933992148665*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -230,20 +272,22 @@ Cell[BoxData[
        RowBox[{"ymax", "\[Rule]", ".0005"}]}], "}"}]}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", "\[IndentingNewLine]", 
-    RowBox[{"\[Sigma]", " ", "=", " ", 
-     RowBox[{
+    RowBox[{
+     RowBox[{"\[Sigma]", " ", "=", " ", 
       RowBox[{"M", " ", 
        RowBox[{"t", " ", "/", " ", 
         RowBox[{"(", 
-         RowBox[{"2", " ", "Ival"}], ")"}]}], "\[IndentingNewLine]", "Ival"}],
-       " ", "=", " ", 
-      RowBox[{
-       RowBox[{"b", " ", 
-        RowBox[{
-         RowBox[{"t", "^", "3"}], " ", "/", " ", "3"}], "\[IndentingNewLine]",
-         "M"}], " ", "=", " ", 
-       RowBox[{"F", " ", 
-        RowBox[{"L", " ", "/", " ", "4"}]}]}]}]}], "\[IndentingNewLine]", 
+         RowBox[{"2", " ", "Ival"}], ")"}]}]}]}], ";", "\[IndentingNewLine]", 
+     
+     RowBox[{"Ival", " ", "=", " ", 
+      RowBox[{"b", " ", 
+       RowBox[{
+        RowBox[{"t", "^", "3"}], " ", "/", " ", "3"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"M", " ", "=", " ", 
+      RowBox[{"F", " ", 
+       RowBox[{"L", " ", "/", " ", "4"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Solve", " ", "for", " ", "Mindex"}]}], "\[IndentingNewLine]", 
     "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Mindex", " ", "=", " ", 
@@ -274,43 +318,106 @@ Cell[BoxData[
            RowBox[{"(", 
             RowBox[{"1", "/", "2"}], ")"}]}], ")"}]}], ")"}]}]}], ";"}], 
     "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"Mindex", " ", "/.", " ", "polystyrene"}], ")"}], " ", "/.", " ",
-     "parameters"}], " ", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"(", 
-     RowBox[{"Mindex", " ", "/.", " ", "aluminum"}], ")"}], " ", "/.", " ", 
-    "parameters"}], "\[IndentingNewLine]"}]}]], "Input",
- CellChangeTimes->CompressedData["
-1:eJwdzm1IUwEAheFRumltqZgFuqDSwgo/W2jEjInBmE5mXIyYSzczRKSZG8UK
-h81s4h2CtK0SE2tZ0TYtnUKuqaRoVJbLic1yLcWKkU4Khhpk99wfh+ff4d2n
-UJ6u2MJgMI5Sg+rwnrf8LwHBrqqCj1CSkn88hzJbsyGEwnSOGA6UFxXD9lCG
-ArpdZbRq5pwSJnrba+D4tfBGuPxnOwl5c2nPoXagnNZ245X4JOVK12cFnE60
-6eGOSbYZ9hKmDihaLLXAbJ/KAX9nhJww6cDMMAxmx07ABybuFOxuPeKGQoNr
-7SblpK5uHb6X2Fh6yo7epkgY82QtH+Z+IAth9I8rUkhUe2SQdYd5AWpnuJUw
-YDGqIFk62ADv6fx6ODK73Awjcsyt8E1/8S3Iviq/DQ0aHa2aQ9hhfRvZDblu
-0Qv4jdc3CLuYlinYorHTxt93eOmeYOECHJrbsFop3yXX9ECFMXcURkulE1DU
-3DkPVwvaFyERFvsTZhmmg5CfrFyHM6wUhg29mXIWTLdusmFvbVEcrG+po3XJ
-hQmwscvLhdtkUfvhs0HyIDz32psGf+09nwWdp5ZOwIqyS3nw4hBHDCv7VRKY
-WSU5Ay8vNNH6PJ9K6L9ZH221IcjvowwjavOg6bBNCJfGkgi4k7VHC/+etZPw
-0LDkIexejXkM20bjjm3OBwRjdx/RXu9jGKVfAwKz2meGURzuS8iTKUagzNHp
-gePaFT/8FzW6tYQyFJ8QBlMHrBFQoamIhE8bvqdCv3N3GvwPx4LMHQ==
-  "]],
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<Formula for Mindex: ``\>\"", ",", "Mindex"}], "]"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Polystyrene", " ", "is", " ", "better", " ", "because", " ", "its", " ", 
+     "material", " ", "index", " ", "is", " ", "higher", " ", "for", " ", 
+     "these", " ", 
+     RowBox[{"parameters", "."}]}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<Mindex for polystyrene: ``\>\"", ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Mindex", " ", "/.", " ", "polystyrene"}], ")"}], " ", "/.", 
+      " ", "parameters"}]}], " ", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"StringForm", "[", 
+    RowBox[{"\"\<Mindex for aluminum: ``\>\"", ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Mindex", " ", "/.", " ", "aluminum"}], ")"}], " ", "/.", " ", 
+      "parameters"}]}], "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.6051308454694157`*^9, 3.60513089838795*^9}, {
+   3.6051317223492813`*^9, 3.605131847827297*^9}, {3.6051318804121437`*^9, 
+   3.6051319545434217`*^9}, {3.6051320495613537`*^9, 3.605132051023171*^9}, {
+   3.6051321588132877`*^9, 3.605132164901506*^9}, {3.605132328171359*^9, 
+   3.605132376373526*^9}, {3.605132681495386*^9, 3.605132683116027*^9}, {
+   3.6051339340786953`*^9, 3.605134102864005*^9}, {3.605134397379373*^9, 
+   3.605134512400031*^9}, {3.605134580666589*^9, 3.6051346189964952`*^9}, {
+   3.6051347556208763`*^9, 3.605134815693597*^9}, {3.605134846660784*^9, 
+   3.6051349046007*^9}, {3.6051349768932657`*^9, 3.605134985361533*^9}, {
+   3.605280709923374*^9, 3.605280715922217*^9}, {3.605280829384864*^9, 
+   3.605280844271804*^9}, {3.605281375770516*^9, 3.60528139636905*^9}, {
+   3.605281499746956*^9, 3.6052815186382236`*^9}, {3.605281584206058*^9, 
+   3.605281600901061*^9}, {3.605281692645009*^9, 3.605281821824163*^9}, {
+   3.605281855015944*^9, 3.6052818794325867`*^9}, {3.605281932695072*^9, 
+   3.605281946709691*^9}, {3.6052819790461483`*^9, 3.6052819800773373`*^9}, {
+   3.605282154626642*^9, 3.60528216436261*^9}, {3.605282250338026*^9, 
+   3.605282261600205*^9}, {3.605282437094561*^9, 3.605282437421088*^9}, {
+   3.6052825096446657`*^9, 3.605282578466715*^9}, {3.605355871839202*^9, 
+   3.60535589950498*^9}, {3.605356058080613*^9, 3.605356090854866*^9}, {
+   3.605356269016881*^9, 3.605356316884392*^9}, {3.6053563525942783`*^9, 
+   3.605356414610866*^9}, {3.605356491473662*^9, 3.605356545407206*^9}, {
+   3.6053566030373573`*^9, 3.605356647989647*^9}, {3.605356714545251*^9, 
+   3.605356715923645*^9}, {3.605356762261931*^9, 3.605356774801455*^9}, {
+   3.6053568164801073`*^9, 3.605356852366539*^9}, {3.605356926805709*^9, 
+   3.605356987129019*^9}, {3.605357023164762*^9, 3.605357091543017*^9}, {
+   3.605357160429496*^9, 3.6053571876158943`*^9}, {3.6053572425129633`*^9, 
+   3.605357244277644*^9}, {3.605357286775985*^9, 3.605357286963829*^9}, {
+   3.6053713754858913`*^9, 3.605371427572756*^9}, {3.605371461380198*^9, 
+   3.605371553149035*^9}, {3.605371888907114*^9, 3.605371997417234*^9}, {
+   3.605372194523335*^9, 3.60537221656063*^9}, {3.606051240680127*^9, 
+   3.60605124520627*^9}, {3.606764704021912*^9, 3.6067647269517317`*^9}, {
+   3.606765024876594*^9, 3.6067650590738773`*^9}, {3.606765221022017*^9, 
+   3.6067653194529753`*^9}, {3.606765598095702*^9, 3.606765600847041*^9}, {
+   3.6067656373659887`*^9, 3.606765643171067*^9}, {3.6067659432035723`*^9, 
+   3.606765944741684*^9}, {3.6069337389902763`*^9, 3.606933747845664*^9}, 
+   3.606933866184826*^9, {3.606934018047683*^9, 3.6069340239630527`*^9}}],
 
 Cell[BoxData[
- FormBox["4.174395246099898`*^-6", TraditionalForm]], "Output",
+ FormBox[
+  InterpretationBox["\<\"Formula for Mindex: \\!\\(TraditionalForm\\`\\(2\\\\ \
+\\@\\(2\\/3\\)\\)\\/\\(b\\\\ Hp\\\\ L\\\\ \[Rho]\\\\ \\@\\(\\(F\\\\ \
+L\\)\\/\\(b\\\\ \[Sigma]\\)\\)\\)\\)\"\>",
+   StringForm[
+   "Formula for Mindex: ``", 2 
+    Rational[2, 3]^
+     Rational[1, 
+       2] $CellContext`b^(-1) $CellContext`Hp^(-1) $CellContext`L^(-1) \
+$CellContext`\[Rho]^(-1) ($CellContext`b^(-1) $CellContext`F \
+$CellContext`L/$CellContext`\[Sigma])^Rational[-1, 2]],
+   Editable->False], TraditionalForm]], "Output",
  CellChangeTimes->{{3.606765291353694*^9, 3.606765321826758*^9}, 
-   3.6067656014809113`*^9, 3.60676564584379*^9, 3.606765946166491*^9}],
+   3.6067656014809113`*^9, 3.60676564584379*^9, 3.606765946166491*^9, 
+   3.606933867027177*^9, 3.606934024602442*^9}],
 
 Cell[BoxData[
- FormBox["2.1510221138213965`*^-6", TraditionalForm]], "Output",
+ FormBox[
+  InterpretationBox["\<\"Mindex for polystyrene: \
+\\!\\(TraditionalForm\\`4.174395246099898`*^-6\\)\"\>",
+   StringForm["Mindex for polystyrene: ``", 4.174395246099898*^-6],
+   Editable->False], TraditionalForm]], "Output",
  CellChangeTimes->{{3.606765291353694*^9, 3.606765321826758*^9}, 
-   3.6067656014809113`*^9, 3.60676564584379*^9, 3.60676594619847*^9}]
+   3.6067656014809113`*^9, 3.60676564584379*^9, 3.606765946166491*^9, 
+   3.606933867027177*^9, 3.6069340246058817`*^9}],
+
+Cell[BoxData[
+ FormBox[
+  InterpretationBox["\<\"Mindex for aluminum: \
+\\!\\(TraditionalForm\\`2.1510221138213965`*^-6\\)\"\>",
+   StringForm["Mindex for aluminum: ``", 2.1510221138213965`*^-6],
+   Editable->False], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.606765291353694*^9, 3.606765321826758*^9}, 
+   3.6067656014809113`*^9, 3.60676564584379*^9, 3.606765946166491*^9, 
+   3.606933867027177*^9, 3.606934024607562*^9}]
 }, Open  ]]
 },
 WindowSize->{1280, 752},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
 FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (January 25, \
 2013)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "Applications", 
@@ -329,14 +436,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 5428, 132, 413, "Input"],
-Cell[6010, 156, 510, 7, 42, "Output"],
-Cell[6523, 165, 509, 7, 42, "Output"]
+Cell[579, 22, 5962, 141, 464, "Input"],
+Cell[6544, 165, 1081, 19, 92, "Output"],
+Cell[7628, 186, 783, 13, 42, "Output"],
+Cell[8414, 201, 775, 13, 42, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7069, 177, 4790, 121, 345, "Input"],
-Cell[11862, 300, 214, 3, 43, "Output"],
-Cell[12079, 305, 214, 3, 43, "Output"]
+Cell[9226, 219, 7362, 157, 413, "Input"],
+Cell[16591, 378, 728, 15, 112, "Output"],
+Cell[17322, 395, 435, 8, 43, "Output"],
+Cell[17760, 405, 430, 8, 77, "Output"]
 }, Open  ]]
 }
 ]
